@@ -1,0 +1,22 @@
+[
+  {
+    "flg": 1,
+    "id": 1,
+    "name": "Chúa 01",
+    "link": "/img/chua/C_1.jpg",
+    "colorNumber": "25",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 2,
+    "name": "Chúa toả hào quang",
+    "link": "/img/chua/C_2.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "175,000",
+    "quantity": ""
+  }
+]

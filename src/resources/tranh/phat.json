@@ -1,0 +1,132 @@
+[
+  {
+    "flg": 1,
+    "id": 1,
+    "name": "Tay phật lá bồ đề",
+    "link": "/img/phat/P_1.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 2,
+    "name": "Phật trên đài sen 01",
+    "link": "/img/phat/P_2.jpg",
+    "colorNumber": "27",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 3,
+    "name": "Phật 01",
+    "link": "/img/phat/P_3.jpg",
+    "colorNumber": "24",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 4,
+    "name": "Phật (Lọ màu 5ml) 01",
+    "link": "/img/phat/P_4.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "200,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 5,
+    "name": "Phật 02",
+    "link": "/img/phat/P_5.jpg",
+    "colorNumber": "24",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 6,
+    "name": "Phật 03",
+    "link": "/img/phat/P_6.jpg",
+    "colorNumber": "28",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 7,
+    "name": "Phật (Lọ màu 5ml) 02",
+    "link": "/img/phat/P_7.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "200,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 8,
+    "name": "Phật (Lọ màu 5ml) 03",
+    "link": "/img/phat/P_8.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "200,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 9,
+    "name": "Phật 04",
+    "link": "/img/phat/P_9.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "205,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 10,
+    "name": "Phật trên đài sen 02",
+    "link": "/img/phat/P_10.jpg",
+    "colorNumber": "27",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 11,
+    "name": "Phật 04",
+    "link": "/img/phat/P_11.jpg",
+    "colorNumber": "31",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 12,
+    "name": "Quan Thế Âm Bồ Tát",
+    "link": "/img/phat/P_12.jpg",
+    "colorNumber": "28",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 13,
+    "name": "Phật vạn hoa",
+    "link": "/img/phat/P_13.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  }
+]

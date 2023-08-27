@@ -1,0 +1,79 @@
+[
+  {
+    "flg": 1,
+    "id": 1,
+    "name": "Tranh Phật",
+    "link": "/the-loai/phat",
+    "importJsonName": "phat"
+  },
+  {
+    "flg": 1,
+    "id": 2,
+    "name": "Phong cảnh",
+    "link": "/the-loai/phong-canh",
+    "importJsonName": "phong-canh"
+  },
+  {
+    "flg": 1,
+    "id": 3,
+    "name": "Mẹ và bé",
+    "link": "/the-loai/me-va-be",
+    "importJsonName": "me-va-be"
+  },
+  {
+    "flg": 1,
+    "id": 4,
+    "name": "Hoa",
+    "link": "/the-loai/hoa",
+    "importJsonName": "hoa"
+  },
+  {
+    "flg": 1,
+    "id": 5,
+    "name": "Tình yêu",
+    "link": "/the-loai/tinh-yeu",
+    "importJsonName": "tinh-yeu"
+  },
+  {
+    "flg": 1,
+    "id": 6,
+    "name": "Hoa sen",
+    "link": "/the-loai/hoa-sen",
+    "importJsonName": "hoa-sen"
+  },
+  {
+    "flg": 1,
+    "id": 7,
+    "name": "Nàng thơ",
+    "link": "/the-loai/nang-tho",
+    "importJsonName": "nang-tho"
+  },
+  {
+    "flg": 1,
+    "id": 8,
+    "name": "Hoạt hình",
+    "link": "/the-loai/hoat-hinh",
+    "importJsonName": "hoat-hinh"
+  },
+  {
+    "flg": 1,
+    "id": 9,
+    "name": "Động vật",
+    "link": "/the-loai/dong-vat",
+    "importJsonName": "dong-vat"
+  },
+  {
+    "flg": 1,
+    "id": 10,
+    "name": "Cung hoàng đạo",
+    "link": "/the-loai/cung-hoang-dao",
+    "importJsonName": "cung-hoang-dao"
+  },
+  {
+    "flg": 1,
+    "id": 11,
+    "name": "Tranh Chúa",
+    "link": "/the-loai/chua",
+    "importJsonName": "chua"
+  }
+]

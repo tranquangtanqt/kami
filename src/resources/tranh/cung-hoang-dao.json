@@ -1,0 +1,32 @@
+[
+  {
+    "flg": 1,
+    "id": 1,
+    "name": "Tranh khung tròn 12 cung hoàng đạo",
+    "link": "/img/cung-hoang-dao/CHD_1.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "200,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 2,
+    "name": "Tranh khung tròn 12 con giáp 01",
+    "link": "/img/cung-hoang-dao/CHD_2.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "200,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 3,
+    "name": "Tranh khung tròn 12 con giáp 02",
+    "link": "/img/cung-hoang-dao/CHD_3.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "200,000",
+    "quantity": ""
+  }
+]

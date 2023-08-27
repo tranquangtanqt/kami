@@ -1,0 +1,22 @@
+[
+  {
+    "flg": 1,
+    "id": 1,
+    "name": "Tình yêu 01",
+    "link": "/img/tinh-yeu/TY_1.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "120,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 2,
+    "name": "Tình yêu 01",
+    "link": "/img/tinh-yeu/TY_2.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "145,000",
+    "quantity": ""
+  }
+]

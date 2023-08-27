@@ -1,0 +1,32 @@
+[
+  {
+    "flg": 1,
+    "id": 1,
+    "name": "Tranh tròn hoa sen 01",
+    "link": "/img/hoa-sen/HS_1.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "185,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 2,
+    "name": "Hoa sen trắng 01",
+    "link": "/img/hoa-sen/HS_2.jpg",
+    "colorNumber": "29",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 3,
+    "name": "Hoa sen 02",
+    "link": "/img/hoa-sen/HS_3.jpg",
+    "colorNumber": "31",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  }
+]

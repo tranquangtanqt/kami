@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+  .product__item__pic {
+    min-height: 450px;
+  }
+}

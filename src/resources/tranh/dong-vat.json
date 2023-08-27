@@ -1,0 +1,122 @@
+[
+  {
+    "flg": 1,
+    "id": 1,
+    "name": "Phượng hoàng 01",
+    "link": "/img/dong-vat/DV_1.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 2,
+    "name": "Xứ sở thần tiên",
+    "link": "/img/dong-vat/DV_2.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "180,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 3,
+    "name": "Phượng hoàng 02",
+    "link": "/img/dong-vat/DV_3.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 4,
+    "name": "Đôi chim",
+    "link": "/img/dong-vat/DV_4.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 5,
+    "name": "Cánh đồng hoa và chú cún 01",
+    "link": "/img/dong-vat/DV_5.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "170,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 6,
+    "name": "Cánh đồng hoa và chú cún 02",
+    "link": "/img/dong-vat/DV_6.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "170,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 7,
+    "name": "Bạch mã",
+    "link": "/img/dong-vat/DV_7.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 8,
+    "name": "Cánh đồng hoa và chú cún 03",
+    "link": "/img/dong-vat/DV_8.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "170,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 9,
+    "name": "Mã đáo thành công",
+    "link": "/img/dong-vat/DV_9.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "320,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 10,
+    "name": "Đôi công",
+    "link": "/img/dong-vat/DV_10.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "205,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 11,
+    "name": "Mèo đại vương",
+    "link": "/img/dong-vat/DV_11.jpg",
+    "colorNumber": "26",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 12,
+    "name": "Ngựa 1 sừng",
+    "link": "/img/dong-vat/DV_12.jpg",
+    "colorNumber": "30",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  }
+]

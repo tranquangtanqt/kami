@@ -1,0 +1,92 @@
+[
+  {
+    "flg": 1,
+    "id": 1,
+    "name": "Sasuke",
+    "link": "/img/hoat-hinh/HH_1.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "145,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 2,
+    "name": "Vua hải tặc 01",
+    "link": "/img/hoat-hinh/HH_2.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 3,
+    "name": "Vua hải tặc 02",
+    "link": "/img/hoat-hinh/HH_3.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "145,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 4,
+    "name": "Vua hải tặc 03",
+    "link": "/img/hoat-hinh/HH_4.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 5,
+    "name": "Naruto",
+    "link": "/img/hoat-hinh/HH_5.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "145,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 6,
+    "name": "Kakashi",
+    "link": "/img/hoat-hinh/HH_6.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "145,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 7,
+    "name": "Vua hải tặc 04",
+    "link": "/img/hoat-hinh/HH_7.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "165,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 8,
+    "name": "Vua hải tặc 05",
+    "link": "/img/hoat-hinh/HH_8.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "165,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 9,
+    "name": "Vua hải tặc 06",
+    "link": "/img/hoat-hinh/HH_9.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "165,000",
+    "quantity": ""
+  }
+]

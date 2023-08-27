@@ -1,0 +1,132 @@
+[
+  {
+    "flg": 1,
+    "id": 1,
+    "name": "Hoa mẫu đơn",
+    "link": "/img/hoa/H_1.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 2,
+    "name": "Hoa 01",
+    "link": "/img/hoa/H_2.jpg",
+    "colorNumber": "",
+    "size": "40x40",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 3,
+    "name": "Hoa hướng dương 01",
+    "link": "/img/hoa/H_3.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 4,
+    "name": "Bức tường hoa hồng",
+    "link": "/img/hoa/H_4.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 5,
+    "name": "Hoa Tuy Líp 01",
+    "link": "/img/hoa/H_5.jpg",
+    "colorNumber": "",
+    "size": "40x40",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 6,
+    "name": "Hoa hướng dương 02",
+    "link": "/img/hoa/H_6.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 7,
+    "name": "Hàng rào hoa",
+    "link": "/img/hoa/H_7.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 8,
+    "name": "Hoa cẩm chướng",
+    "link": "/img/hoa/H_8.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "185,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 9,
+    "name": "Hoa Tuy Líp 02",
+    "link": "/img/hoa/H_9.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 10,
+    "name": "Cánh đồng hoa Tuy Líp 03",
+    "link": "/img/hoa/H_10.jpg",
+    "colorNumber": "32",
+    "size": "40x50",
+    "price": "180,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 11,
+    "name": "Cánh đồng hoa Tuy Líp 04",
+    "link": "/img/hoa/H_11.jpg",
+    "colorNumber": "32",
+    "size": "40x50",
+    "price": "180,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 12,
+    "name": "Hoa hướng dương 03",
+    "link": "/img/hoa/H_12.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "195,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 13,
+    "name": "Cánh đồng hoa Tuy Líp 05",
+    "link": "/img/hoa/H_13.jpg",
+    "colorNumber": "29",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  }
+]

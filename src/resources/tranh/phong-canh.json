@@ -1,0 +1,182 @@
+[
+  {
+    "flg": 1,
+    "id": 1,
+    "name": "Phong cảnh biển",
+    "link": "/img/phong-canh/PC_1.jpg",
+    "colorNumber": "",
+    "size": "30x30",
+    "price": "130,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 2,
+    "name": "Phong cảnh đồng quê",
+    "link": "/img/phong-canh/PC_2.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 3,
+    "name": "Phong cảnh phương Tây",
+    "link": "/img/phong-canh/PC_3.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 4,
+    "name": "Cánh đồng lúa mì",
+    "link": "/img/phong-canh/PC_4.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 5,
+    "name": "Phong cảnh 01",
+    "link": "/img/phong-canh/PC_5.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 6,
+    "name": "Phong cảnh 02",
+    "link": "/img/phong-canh/PC_6.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 7,
+    "name": "Phong cảnh 03",
+    "link": "/img/phong-canh/PC_7.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 8,
+    "name": "Phong cảnh Nhật Bản 01",
+    "link": "/img/phong-canh/PC_8.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "180,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 9,
+    "name": "Phong cảnh Sông núi 01",
+    "link": "/img/phong-canh/PC_9.jpg",
+    "colorNumber": "",
+    "size": "30x40",
+    "price": "130,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 10,
+    "name": "Phong cảnh 04",
+    "link": "/img/phong-canh/PC_10.jpg",
+    "colorNumber": "",
+    "size": "30x40",
+    "price": "130,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 11,
+    "name": "Mẹ thiên nhiên",
+    "link": "/img/phong-canh/PC_11.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 12,
+    "name": "Phong cảnh Sông núi 02",
+    "link": "/img/phong-canh/PC_12.jpg",
+    "colorNumber": "",
+    "size": "30x40",
+    "price": "130,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 13,
+    "name": "Phong cảnh mùa thu",
+    "link": "/img/phong-canh/PC_13.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 14,
+    "name": "Bồng lai tiên cảnh",
+    "link": "/img/phong-canh/PC_14.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "180,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 15,
+    "name": "Phong cảnh Nhật Bản 02",
+    "link": "/img/phong-canh/PC_15.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "180,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 16,
+    "name": "Thuyền và biển",
+    "link": "/img/phong-canh/PC_16.jpg",
+    "colorNumber": "",
+    "size": "",
+    "price": "135,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 17,
+    "name": "Ruộng bậc thang",
+    "link": "/img/phong-canh/PC_17.jpg",
+    "colorNumber": "30",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  },
+  {
+    "flg": 1,
+    "id": 18,
+    "name": "Thiên nhiên hùng vỹ",
+    "link": "/img/phong-canh/PC_18.jpg",
+    "colorNumber": "29",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": ""
+  }
+]
