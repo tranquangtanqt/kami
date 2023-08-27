@@ -7,4 +7,5 @@ git commit -m "%DATE% %TIME%"
 
 git push
 
+echo "THAY ĐỔI THÀNH CÔNG"
 pause
