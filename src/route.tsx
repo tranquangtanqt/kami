@@ -9,7 +9,7 @@ import { MakeDataJsonFromExcelCategory } from "pages/convert/category";
 import { MakeDataJsonFromExcelPicture } from "pages/convert/picture";
 import { Category } from "pages/category";
 import { Contact } from "pages/contact";
-import { IGallery } from "utils/interface/IGallery.interface";
+import { IGallery } from "utils/interface/gallery.interface";
 
 export const RoutesRoot = () => {
   const lightGallery = useRef<any>(null);
@@ -52,8 +52,14 @@ export const RoutesRoot = () => {
             <Route path="/" element={<Home />} />
             <Route path="/the-loai/:theloai" element={<Category />} />
             <Route path="/lien-he" element={<Contact />} />
-            <Route path="/chuyen-doi/tranh" element={<MakeDataJsonFromExcelPicture />} />
-            <Route path="/chuyen-doi/the-loai" element={<MakeDataJsonFromExcelCategory />} />
+            <Route
+              path="/chuyen-doi/tranh"
+              element={<MakeDataJsonFromExcelPicture />}
+            />
+            <Route
+              path="/chuyen-doi/the-loai"
+              element={<MakeDataJsonFromExcelCategory />}
+            />
           </Routes>
         </MasterLayout>
       </HashRouter>
@@ -61,7 +67,12 @@ export const RoutesRoot = () => {
         <button onClick={openGallery} className="d-none">
           Open Gallery
         </button>
-        <button onClick={addItems} defaultValue={""} id="open-gallery" className="d-none">
+        <button
+          onClick={addItems}
+          defaultValue={""}
+          id="open-gallery"
+          className="d-none"
+        >
           Add new slide and open gallery
         </button>
         <LightGallery

@@ -1,24 +1,24 @@
-import chua from 'resources/tranh/chua.json';
-import cungHoangDao from 'resources/tranh/cung-hoang-dao.json';
-import dongVat from 'resources/tranh/dong-vat.json';
-import hoa from 'resources/tranh/hoa.json';
-import hoaSen from 'resources/tranh/hoa-sen.json';
-import hoatHinh from 'resources/tranh/hoat-hinh.json';
-import meVaBe from 'resources/tranh/me-va-be.json';
-import nangTho from 'resources/tranh/nang-tho.json';
-import phat from 'resources/tranh/phat.json';
-import phongCanh from 'resources/tranh/phong-canh.json';
-import tinhYeu from 'resources/tranh/tinh-yeu.json';
-import './index.css';
-import categories from 'resources/the-loai/the-loai.json';
-import { ProductView } from 'components/home/product-view';
-import { Link } from 'react-router-dom';
+import chua from "resources/tranh/chua.json";
+import cungHoangDao from "resources/tranh/cung-hoang-dao.json";
+import dongVat from "resources/tranh/dong-vat.json";
+import hoa from "resources/tranh/hoa.json";
+import hoaSen from "resources/tranh/hoa-sen.json";
+import hoatHinh from "resources/tranh/hoat-hinh.json";
+import meVaBe from "resources/tranh/me-va-be.json";
+import nangTho from "resources/tranh/nang-tho.json";
+import phat from "resources/tranh/phat.json";
+import phongCanh from "resources/tranh/phong-canh.json";
+import tinhYeu from "resources/tranh/tinh-yeu.json";
+import "./index.css";
+import categories from "resources/the-loai/the-loai.json";
+import { ProductView } from "components/home/product-view";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   const init = () => {
     setTimeout(() => {
-      $('.loader').fadeOut();
-      $('#preloder').delay(100).fadeOut('slow');
+      $(".loader").fadeOut();
+      $("#preloder").delay(100).fadeOut("slow");
     }, 100);
   };
   init();
@@ -142,38 +142,71 @@ export const Home = () => {
                       </div>
                     </div>
                   </div>
-                  {value.importJsonName === 'phat' && (
-                    <ProductView product={phat}></ProductView>
+                  {value.importJsonName === "phat" && (
+                    <ProductView
+                      picture={phat}
+                      isOutstanding={true}
+                    ></ProductView>
                   )}
-                  {value.importJsonName === 'phong-canh' && (
-                    <ProductView product={phongCanh}></ProductView>
+                  {value.importJsonName === "phong-canh" && (
+                    <ProductView
+                      picture={phongCanh}
+                      isOutstanding={true}
+                    ></ProductView>
                   )}
-                  {value.importJsonName === 'me-va-be' && (
-                    <ProductView product={meVaBe}></ProductView>
+                  {value.importJsonName === "me-va-be" && (
+                    <ProductView
+                      picture={meVaBe}
+                      isOutstanding={true}
+                    ></ProductView>
                   )}
-                  {value.importJsonName === 'hoa' && (
-                    <ProductView product={hoa}></ProductView>
+                  {value.importJsonName === "hoa" && (
+                    <ProductView
+                      picture={hoa}
+                      isOutstanding={true}
+                    ></ProductView>
                   )}
-                  {value.importJsonName === 'tinh-yeu' && (
-                    <ProductView product={tinhYeu}></ProductView>
+                  {value.importJsonName === "tinh-yeu" && (
+                    <ProductView
+                      picture={tinhYeu}
+                      isOutstanding={true}
+                    ></ProductView>
                   )}
-                  {value.importJsonName === 'hoa-sen' && (
-                    <ProductView product={hoaSen}></ProductView>
+                  {value.importJsonName === "hoa-sen" && (
+                    <ProductView
+                      picture={hoaSen}
+                      isOutstanding={true}
+                    ></ProductView>
                   )}
-                  {value.importJsonName === 'nang-tho' && (
-                    <ProductView product={nangTho}></ProductView>
+                  {value.importJsonName === "nang-tho" && (
+                    <ProductView
+                      picture={nangTho}
+                      isOutstanding={true}
+                    ></ProductView>
                   )}
-                  {value.importJsonName === 'chua' && (
-                    <ProductView product={chua}></ProductView>
+                  {value.importJsonName === "chua" && (
+                    <ProductView
+                      picture={chua}
+                      isOutstanding={true}
+                    ></ProductView>
                   )}
-                  {value.importJsonName === 'hoat-hinh' && (
-                    <ProductView product={hoatHinh}></ProductView>
+                  {value.importJsonName === "hoat-hinh" && (
+                    <ProductView
+                      picture={hoatHinh}
+                      isOutstanding={true}
+                    ></ProductView>
                   )}
-                  {value.importJsonName === 'dong-vat' && (
-                    <ProductView product={dongVat}></ProductView>
+                  {value.importJsonName === "dong-vat" && (
+                    <ProductView
+                      picture={dongVat}
+                      isOutstanding={true}
+                    ></ProductView>
                   )}
-                  {value.importJsonName === 'cung-hoang-dao' && (
-                    <ProductView product={cungHoangDao}></ProductView>
+                  {value.importJsonName === "cung-hoang-dao" && (
+                    <ProductView
+                      picture={cungHoangDao}
+                      isOutstanding={true}
+                    ></ProductView>
                   )}
                 </div>
               ))}

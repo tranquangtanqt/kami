@@ -1,35 +1,58 @@
+import { Link } from "react-router-dom";
+import { APP } from "utils/constants/app.constants";
+import { IPicture } from "utils/interface/picture.interface";
+
 type Props = {
-  product: {
-    flg: number;
-    id: number;
-    name: string;
-    link: string;
-    colorNumber: string;
-    size: string;
-    price: string;
-    quantity: string;
-  }[];
+  picture: IPicture[];
+  isOutstanding?: boolean;
 };
 
-export const ProductView: React.FC<Props> = ({ product }) => {
+export const ProductView: React.FC<Props> = ({ picture, isOutstanding }) => {
   const openGallery = (link: string) => {
-    const btnOpenGalleryInRouter = $('#open-gallery');
+    const btnOpenGalleryInRouter = $("#open-gallery");
     btnOpenGalleryInRouter.val(link);
     btnOpenGalleryInRouter.click();
   };
+
+  const init = () => {
+    if (isOutstanding !== undefined && isOutstanding) {
+      picture = picture.filter((x) => {
+        return (
+          x.outstanding !== undefined && x.outstanding?.trim().length !== 0
+        );
+      });
+      picture = picture.sort((a, b) => {
+        if (a.order === undefined || b.order === undefined) {
+          return 99999;
+        }
+
+        return a.order - b.order;
+      });
+    } else {
+      picture = picture.sort((a, b) => {
+        if (a.order === undefined || b.order === undefined) {
+          return 99999;
+        }
+
+        return a.order - b.order;
+      });
+    }
+  };
+
+  init();
   return (
     <>
       <div className="row">
-        {product.map((data, key) => (
+        {picture.map((data, key) => (
           <div className="col-lg-3 col-md-6 col-sm-6" key={key}>
             <div className="product__item">
               <div
                 className="product__item__pic set-bg img-thumbnail width-100"
                 style={{
-                  backgroundImage: `url(${process.env.PUBLIC_URL + data.link})`,
-                  cursor: 'pointer',
+                  backgroundImage: `url(${APP.PUBLIC_URL + data.link})`,
+                  cursor: "pointer",
                 }}
-                onClick={() => openGallery(process.env.PUBLIC_URL + data.link)}
+                onClick={() => openGallery(APP.PUBLIC_URL + data.link)}
               >
                 {/* <img
               className="width-100 img-thumbnail"
@@ -41,13 +64,14 @@ export const ProductView: React.FC<Props> = ({ product }) => {
               </div>
               <div className="product__item__text">
                 <h5>
-                  <a href="#">{data.name}</a>
+                  <Link to={""}>{data.name}</Link>
                 </h5>
               </div>
               <div className="anime__details__text">
                 <p>
-                  Số màu: {data.colorNumber} <br /> Kích thước: {data.size}{' '}
-                  <br /> Giá: {data.price}đ
+                  <span>Số màu: {data.colorNumber}</span>
+                  <span className="pull-right">KM0100</span>
+                  <br /> Kích thước: {data.size} <br /> Giá: {data.price}đ
                 </p>
               </div>
             </div>

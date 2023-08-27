@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import * as XLSX from 'xlsx';
-import NumberUtils from 'utils/number-utils';
+import { useState } from "react";
+import * as XLSX from "xlsx";
+import NumberUtils from "utils/number-utils";
+import { IPicture } from "utils/interface/picture.interface";
 
 export const MakeDataJsonFromExcelPicture = () => {
   const [fileInput, setfileInput] = useState();
@@ -15,8 +16,8 @@ export const MakeDataJsonFromExcelPicture = () => {
       for (let i = 0; i !== dataBuffer.length; ++i) {
         arr[i] = String.fromCharCode(dataBuffer[i]);
       }
-      const bstr = arr.join('');
-      const workbook = XLSX.read(bstr, { type: 'binary' });
+      const bstr = arr.join("");
+      const workbook = XLSX.read(bstr, { type: "binary" });
 
       for (let index = 0; index < workbook.SheetNames?.length; index++) {
         const worksheetName = workbook.SheetNames[index];
@@ -25,38 +26,65 @@ export const MakeDataJsonFromExcelPicture = () => {
 
         const arr = [];
         for (let i = 0; i < data.length; i++) {
-          const obj: any = {};
+          let obj: IPicture = {};
           const item = data[i];
-          if (item.flg === 1) {
+          if (item.flg !== undefined && item.flg === 1) {
             obj.flg = item.flg;
-            obj.id = '';
-            obj.name = '';
-            obj.link = '';
-            obj.colorNumber = '';
-            obj.size = '';
-            obj.price = '';
-            obj.quantity = '';
+            obj.id = 0;
+            obj.name = "";
+            obj.link = "";
+            obj.colorNumber = "";
+            obj.size = "";
+            obj.price = "";
+            obj.quantity = "";
 
+            // column 1: STT
             if (item.id !== undefined) {
               obj.id = item.id;
             }
+            // column 2: Tên
             if (item.name !== undefined) {
               obj.name = item.name;
             }
+            // column 3: Đường dẫn
             if (item.link !== undefined) {
               obj.link = item.link;
             }
+            // column 4: Số màu
             if (item.colorNumber !== undefined) {
-              obj.colorNumber = item.colorNumber + '';
+              obj.colorNumber = item.color_number + "";
             }
+            // column 5: Kích thước
             if (item.size !== undefined) {
               obj.size = item.size;
             }
+            // column 6: Giá
             if (item.price !== undefined) {
               obj.price = NumberUtils.numberWithCommas(item.price);
             }
+            // column 7: Số lượng
             if (item.quantity !== undefined) {
               obj.quantity = item.quantity;
+            }
+            // column 8:  Nổi bật trang 1
+            if (item.outstanding !== undefined) {
+              obj.outstanding = item.outstanding.trim();
+            }
+            // column 9: Sắp xếp
+            if (item.order !== undefined) {
+              obj.order = item.order;
+            }
+            // column 10: Thứ tự ưu tiên
+            if (item.order !== undefined) {
+              obj.order = item.order;
+            }
+            // column 11: Mã shopppe
+            if (item.shoppeCode !== undefined) {
+              obj.shoppeCode = item.shoppe_code;
+            }
+            // column 11: Mã kami
+            if (item.kamiCode !== undefined) {
+              obj.kamiCode = item.kami_code;
             }
             arr.push(obj);
           }
@@ -80,13 +108,13 @@ export const MakeDataJsonFromExcelPicture = () => {
    */
   const downloadFile = (fileName: string, myData: any) => {
     const json = JSON.stringify(myData, null, 2);
-    const blob = new Blob([json], { type: 'application/json' });
+    const blob = new Blob([json], { type: "application/json" });
     const href = URL.createObjectURL(blob);
 
     // create "a" HTLM element with href to file
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     link.href = href;
-    link.download = fileName + '.json';
+    link.download = fileName + ".json";
     document.body.appendChild(link);
     link.click();
 

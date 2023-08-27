@@ -7,7 +7,9 @@
     "colorNumber": "",
     "size": "40x50",
     "price": "120,000",
-    "quantity": ""
+    "quantity": "",
+    "outstanding": "x",
+    "order": 1
   },
   {
     "flg": 1,
@@ -17,6 +19,8 @@
     "colorNumber": "",
     "size": "",
     "price": "145,000",
-    "quantity": ""
+    "quantity": "",
+    "outstanding": "x",
+    "order": 2
   }
 ]

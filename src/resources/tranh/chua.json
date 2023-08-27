@@ -4,10 +4,12 @@
     "id": 1,
     "name": "Chúa 01",
     "link": "/img/chua/C_1.jpg",
-    "colorNumber": "25",
+    "colorNumber": "",
     "size": "40x50",
     "price": "175,000",
-    "quantity": ""
+    "quantity": "",
+    "outstanding": "x",
+    "order": 1
   },
   {
     "flg": 1,
@@ -17,6 +19,8 @@
     "colorNumber": "",
     "size": "",
     "price": "175,000",
-    "quantity": ""
+    "quantity": "",
+    "outstanding": "x",
+    "order": 2
   }
 ]
