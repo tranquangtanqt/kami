@@ -21,7 +21,8 @@
     "price": "175,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 2
+    "order": 2,
+    "shoppeCode": "KM019"
   },
   {
     "flg": 1,
@@ -33,7 +34,8 @@
     "price": "175,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 3
+    "order": 3,
+    "shoppeCode": "KM017"
   },
   {
     "flg": 1,
@@ -57,7 +59,8 @@
     "price": "175,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 5
+    "order": 5,
+    "shoppeCode": "KM016"
   },
   {
     "flg": 1,
@@ -69,7 +72,8 @@
     "price": "175,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 6
+    "order": 6,
+    "shoppeCode": "KM020"
   },
   {
     "flg": 1,
@@ -113,7 +117,8 @@
     "colorNumber": "",
     "size": "40x50",
     "price": "175,000",
-    "quantity": ""
+    "quantity": "",
+    "shoppeCode": "KM014"
   },
   {
     "flg": 1,
@@ -123,7 +128,8 @@
     "colorNumber": "",
     "size": "40x50",
     "price": "175,000",
-    "quantity": ""
+    "quantity": "",
+    "shoppeCode": "KM003"
   },
   {
     "flg": 1,
@@ -133,7 +139,8 @@
     "colorNumber": "",
     "size": "40x50",
     "price": "175,000",
-    "quantity": ""
+    "quantity": "",
+    "shoppeCode": "KM013"
   },
   {
     "flg": 1,

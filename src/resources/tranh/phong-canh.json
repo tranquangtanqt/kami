@@ -183,7 +183,8 @@
     "colorNumber": "",
     "size": "40x50",
     "price": "175,000",
-    "quantity": ""
+    "quantity": "",
+    "shoppeCode": "KM006"
   },
   {
     "flg": 1,
@@ -193,6 +194,7 @@
     "colorNumber": "",
     "size": "40x50",
     "price": "175,000",
-    "quantity": ""
+    "quantity": "",
+    "shoppeCode": "KM007"
   }
 ]

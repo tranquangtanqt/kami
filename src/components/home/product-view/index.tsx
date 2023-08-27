@@ -70,7 +70,12 @@ export const ProductView: React.FC<Props> = ({ picture, isOutstanding }) => {
               <div className="anime__details__text">
                 <p>
                   <span>Số màu: {data.colorNumber}</span>
-                  <span className="pull-right">KM0100</span>
+                  {data.shoppeCode !== undefined &&
+                  data.shoppeCode.trim() !== "" ? (
+                    <span className="pull-right">{data.shoppeCode}</span>
+                  ) : (
+                    <span className="pull-right">{data.kamiCode}</span>
+                  )}
                   <br /> Kích thước: {data.size} <br /> Giá: {data.price}đ
                 </p>
               </div>

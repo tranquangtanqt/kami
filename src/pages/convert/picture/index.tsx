@@ -79,11 +79,11 @@ export const MakeDataJsonFromExcelPicture = () => {
               obj.order = item.order;
             }
             // column 11: Mã shopppe
-            if (item.shoppeCode !== undefined) {
+            if (item.shoppe_code !== undefined) {
               obj.shoppeCode = item.shoppe_code;
             }
             // column 11: Mã kami
-            if (item.kamiCode !== undefined) {
+            if (item.kami_code !== undefined) {
               obj.kamiCode = item.kami_code;
             }
             arr.push(obj);

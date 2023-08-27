@@ -9,7 +9,8 @@
     "price": "175,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 1
+    "order": 1,
+    "shoppeCode": "KM011"
   },
   {
     "flg": 1,
