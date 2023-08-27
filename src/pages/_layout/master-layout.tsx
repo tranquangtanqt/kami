@@ -46,7 +46,7 @@ export const MasterLayout = (props: masterLayoutProps) => {
                           ))}
                         </ul>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link to={"/chuyen-doi/tranh"}>Chuyển đổi tranh</Link>
                       </li>
                       <li>
@@ -56,7 +56,7 @@ export const MasterLayout = (props: masterLayoutProps) => {
                       </li>
                       <li>
                         <Link to={"/lien-he"}>Liên hệ</Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </nav>

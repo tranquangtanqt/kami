@@ -11,7 +11,7 @@ import phongCanh from "resources/tranh/phong-canh.json";
 import tinhYeu from "resources/tranh/tinh-yeu.json";
 import "./index.css";
 import categories from "resources/the-loai/the-loai.json";
-import { ProductView } from "components/home/product-view";
+import { PictureView } from "components/home/picture-view";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
@@ -143,70 +143,70 @@ export const Home = () => {
                     </div>
                   </div>
                   {value.importJsonName === "phat" && (
-                    <ProductView
+                    <PictureView
                       picture={phat}
                       isOutstanding={true}
-                    ></ProductView>
+                    ></PictureView>
                   )}
                   {value.importJsonName === "phong-canh" && (
-                    <ProductView
+                    <PictureView
                       picture={phongCanh}
                       isOutstanding={true}
-                    ></ProductView>
+                    ></PictureView>
                   )}
                   {value.importJsonName === "me-va-be" && (
-                    <ProductView
+                    <PictureView
                       picture={meVaBe}
                       isOutstanding={true}
-                    ></ProductView>
+                    ></PictureView>
                   )}
                   {value.importJsonName === "hoa" && (
-                    <ProductView
+                    <PictureView
                       picture={hoa}
                       isOutstanding={true}
-                    ></ProductView>
+                    ></PictureView>
                   )}
                   {value.importJsonName === "tinh-yeu" && (
-                    <ProductView
+                    <PictureView
                       picture={tinhYeu}
                       isOutstanding={true}
-                    ></ProductView>
+                    ></PictureView>
                   )}
                   {value.importJsonName === "hoa-sen" && (
-                    <ProductView
+                    <PictureView
                       picture={hoaSen}
                       isOutstanding={true}
-                    ></ProductView>
+                    ></PictureView>
                   )}
                   {value.importJsonName === "nang-tho" && (
-                    <ProductView
+                    <PictureView
                       picture={nangTho}
                       isOutstanding={true}
-                    ></ProductView>
+                    ></PictureView>
                   )}
                   {value.importJsonName === "chua" && (
-                    <ProductView
+                    <PictureView
                       picture={chua}
                       isOutstanding={true}
-                    ></ProductView>
+                    ></PictureView>
                   )}
                   {value.importJsonName === "hoat-hinh" && (
-                    <ProductView
+                    <PictureView
                       picture={hoatHinh}
                       isOutstanding={true}
-                    ></ProductView>
+                    ></PictureView>
                   )}
                   {value.importJsonName === "dong-vat" && (
-                    <ProductView
+                    <PictureView
                       picture={dongVat}
                       isOutstanding={true}
-                    ></ProductView>
+                    ></PictureView>
                   )}
                   {value.importJsonName === "cung-hoang-dao" && (
-                    <ProductView
+                    <PictureView
                       picture={cungHoangDao}
                       isOutstanding={true}
-                    ></ProductView>
+                    ></PictureView>
                   )}
                 </div>
               ))}

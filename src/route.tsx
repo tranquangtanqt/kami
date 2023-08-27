@@ -44,6 +44,7 @@ export const RoutesRoot = () => {
     setItems(updatedItems);
     setTimeout(openGallery, 100);
   }, [items]);
+
   return (
     <Fragment>
       <HashRouter>

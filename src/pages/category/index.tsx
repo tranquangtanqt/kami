@@ -11,7 +11,7 @@ import phongCanh from "resources/tranh/phong-canh.json";
 import tinhYeu from "resources/tranh/tinh-yeu.json";
 import "./index.css";
 import categories from "resources/the-loai/the-loai.json";
-import { ProductView } from "components/home/product-view";
+import { PictureDetailView } from "components/home/picture-view-detail";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ICategory } from "utils/interface/category.interface";
@@ -38,6 +38,7 @@ export const Category = () => {
     }, 100);
   };
   init();
+
   return (
     <>
       {/* Page Preloder */}
@@ -88,37 +89,40 @@ export const Category = () => {
                   </div>
                 </div>
                 {category?.importJsonName === "phat" && (
-                  <ProductView picture={phat}></ProductView>
+                  <PictureDetailView
+                    picture={phat}
+                    category={"phat"}
+                  ></PictureDetailView>
                 )}
                 {category?.importJsonName === "phong-canh" && (
-                  <ProductView picture={phongCanh}></ProductView>
+                  <PictureDetailView picture={phongCanh}></PictureDetailView>
                 )}
                 {category?.importJsonName === "me-va-be" && (
-                  <ProductView picture={meVaBe}></ProductView>
+                  <PictureDetailView picture={meVaBe}></PictureDetailView>
                 )}
                 {category?.importJsonName === "hoa" && (
-                  <ProductView picture={hoa}></ProductView>
+                  <PictureDetailView picture={hoa}></PictureDetailView>
                 )}
                 {category?.importJsonName === "tinh-yeu" && (
-                  <ProductView picture={tinhYeu}></ProductView>
+                  <PictureDetailView picture={tinhYeu}></PictureDetailView>
                 )}
                 {category?.importJsonName === "hoa-sen" && (
-                  <ProductView picture={hoaSen}></ProductView>
+                  <PictureDetailView picture={hoaSen}></PictureDetailView>
                 )}
                 {category?.importJsonName === "nang-tho" && (
-                  <ProductView picture={nangTho}></ProductView>
+                  <PictureDetailView picture={nangTho}></PictureDetailView>
                 )}
                 {category?.importJsonName === "chua" && (
-                  <ProductView picture={chua}></ProductView>
+                  <PictureDetailView picture={chua}></PictureDetailView>
                 )}
                 {category?.importJsonName === "hoat-hinh" && (
-                  <ProductView picture={hoatHinh}></ProductView>
+                  <PictureDetailView picture={hoatHinh}></PictureDetailView>
                 )}
                 {category?.importJsonName === "dong-vat" && (
-                  <ProductView picture={dongVat}></ProductView>
+                  <PictureDetailView picture={dongVat}></PictureDetailView>
                 )}
                 {category?.importJsonName === "cung-hoang-dao" && (
-                  <ProductView picture={cungHoangDao}></ProductView>
+                  <PictureDetailView picture={cungHoangDao}></PictureDetailView>
                 )}
               </div>
             </div>

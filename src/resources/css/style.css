@@ -908,10 +908,6 @@ ol {
   border-radius: 0;
 }
 
-.product__pagination {
-  padding-top: 15px;
-}
-
 .product__pagination a {
   display: inline-block;
   font-size: 15px;
