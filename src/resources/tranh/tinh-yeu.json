@@ -9,7 +9,8 @@
     "price": "120,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 1
+    "order": 1,
+    "kamiCode": "KM054"
   },
   {
     "flg": 1,
@@ -21,6 +22,7 @@
     "price": "145,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 2
+    "order": 2,
+    "kamiCode": "KM055"
   }
 ]

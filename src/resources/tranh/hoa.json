@@ -9,7 +9,8 @@
     "price": "135,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 1
+    "order": 1,
+    "kamiCode": "KM043"
   },
   {
     "flg": 1,
@@ -21,7 +22,8 @@
     "price": "135,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 2
+    "order": 2,
+    "kamiCode": "KM044"
   },
   {
     "flg": 1,
@@ -33,7 +35,8 @@
     "price": "135,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 3
+    "order": 3,
+    "kamiCode": "KM045"
   },
   {
     "flg": 1,
@@ -45,7 +48,8 @@
     "price": "135,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 4
+    "order": 4,
+    "kamiCode": "KM046"
   },
   {
     "flg": 1,
@@ -57,7 +61,8 @@
     "price": "135,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 5
+    "order": 5,
+    "kamiCode": "KM047"
   },
   {
     "flg": 1,
@@ -69,7 +74,8 @@
     "price": "135,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 6
+    "order": 6,
+    "kamiCode": "KM048"
   },
   {
     "flg": 1,
@@ -81,7 +87,8 @@
     "price": "135,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 7
+    "order": 7,
+    "kamiCode": "KM049"
   },
   {
     "flg": 1,
@@ -93,7 +100,8 @@
     "price": "185,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 8
+    "order": 8,
+    "kamiCode": "KM050"
   },
   {
     "flg": 1,
@@ -103,7 +111,8 @@
     "colorNumber": "",
     "size": "40x50",
     "price": "175,000",
-    "quantity": ""
+    "quantity": "",
+    "kamiCode": "KM051"
   },
   {
     "flg": 1,
@@ -135,7 +144,8 @@
     "colorNumber": "",
     "size": "",
     "price": "195,000",
-    "quantity": ""
+    "quantity": "",
+    "kamiCode": "KM052"
   },
   {
     "flg": 1,

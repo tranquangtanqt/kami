@@ -53,10 +53,10 @@ export const MasterLayout = (props: masterLayoutProps) => {
                         <Link to={"/chuyen-doi/the-loai"}>
                           Chuyển đổi thể loại
                         </Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link to={"/lien-he"}>Liên hệ</Link>
-                      </li> */}
+                      </li>
                     </ul>
                   </div>
                 </nav>

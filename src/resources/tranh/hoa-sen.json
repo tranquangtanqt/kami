@@ -9,7 +9,8 @@
     "price": "185,000",
     "quantity": "",
     "outstanding": "x",
-    "order": 1
+    "order": 1,
+    "kamiCode": "KM053"
   },
   {
     "flg": 1,
