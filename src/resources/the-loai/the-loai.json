@@ -75,5 +75,12 @@
     "name": "Tranh Chúa",
     "link": "/the-loai/chua",
     "importJsonName": "chua"
+  },
+  {
+    "flg": 1,
+    "id": 12,
+    "name": "Bếp và món ăn",
+    "link": "/the-loai/bep",
+    "importJsonName": "bep"
   }
 ]

@@ -64,12 +64,17 @@ export const MasterLayout = (props: masterLayoutProps) => {
             </div>
             <div className="col-lg-2">
               <div className="header__right">
-                <Link to={"/chuyen-doi/the-loai"} className="search-switch">
+                <Link to={"#"} className="search-switch">
+                  <i className="fa fa-shopping-basket" aria-hidden="true">
+                    <span className="font-custom"></span>
+                  </i>
+                </Link>
+                <Link to={"#"} className="search-switch">
                   <span className="icon_search"></span>
                 </Link>
-                <a href="./login.html">
+                <Link to={"#"}>
                   <span className="icon_profile"></span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -91,9 +96,9 @@ export const MasterLayout = (props: masterLayoutProps) => {
           <div className="row">
             <div className="col-lg-3">
               <div className="footer__logo">
-                <a href="./index.html">
+                <Link to={"/"}>
                   <img src={process.env.PUBLIC_URL + "/img/logo.png"} alt="" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-6">

@@ -1,0 +1,54 @@
+[
+  {
+    "flg": 1,
+    "id": 1,
+    "name": "Bếp và món ăn",
+    "link": "/img/bep/B_1.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "outstanding": "x",
+    "order": 1,
+    "kamiCode": "KM097"
+  },
+  {
+    "flg": 1,
+    "id": 2,
+    "name": "Bếp và món ăn",
+    "link": "/img/bep/B_2.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "outstanding": "x",
+    "order": 2,
+    "kamiCode": "KM098"
+  },
+  {
+    "flg": 1,
+    "id": 3,
+    "name": "Bếp và món ăn",
+    "link": "/img/bep/B_3.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "outstanding": "x",
+    "order": 3,
+    "kamiCode": "KM099"
+  },
+  {
+    "flg": 1,
+    "id": 4,
+    "name": "Bếp và món ăn",
+    "link": "/img/bep/B_4.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "outstanding": "x",
+    "order": 4,
+    "kamiCode": "KM100"
+  }
+]

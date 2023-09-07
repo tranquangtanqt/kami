@@ -15,7 +15,7 @@
   {
     "flg": 1,
     "id": 2,
-    "name": "Hoa 01",
+    "name": "Hoa",
     "link": "/img/hoa/H_2.jpg",
     "colorNumber": "",
     "size": "40x40",
@@ -28,7 +28,7 @@
   {
     "flg": 1,
     "id": 3,
-    "name": "Hoa hướng dương 01",
+    "name": "Hoa hướng dương",
     "link": "/img/hoa/H_3.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -54,7 +54,7 @@
   {
     "flg": 1,
     "id": 5,
-    "name": "Hoa Tuy Líp 01",
+    "name": "Hoa Tuy Líp",
     "link": "/img/hoa/H_5.jpg",
     "colorNumber": "",
     "size": "40x40",
@@ -67,7 +67,7 @@
   {
     "flg": 1,
     "id": 6,
-    "name": "Hoa hướng dương 02",
+    "name": "Hoa hướng dương",
     "link": "/img/hoa/H_6.jpg",
     "colorNumber": "",
     "size": "",
@@ -106,7 +106,7 @@
   {
     "flg": 1,
     "id": 9,
-    "name": "Hoa Tuy Líp 02",
+    "name": "Hoa Tuy Líp",
     "link": "/img/hoa/H_9.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -117,7 +117,7 @@
   {
     "flg": 1,
     "id": 10,
-    "name": "Cánh đồng hoa Tuy Líp 03",
+    "name": "Cánh đồng hoa Tuy Líp",
     "link": "/img/hoa/H_10.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -128,7 +128,7 @@
   {
     "flg": 1,
     "id": 11,
-    "name": "Cánh đồng hoa Tuy Líp 04",
+    "name": "Cánh đồng hoa Tuy Líp",
     "link": "/img/hoa/H_11.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -139,7 +139,7 @@
   {
     "flg": 1,
     "id": 12,
-    "name": "Hoa hướng dương 03",
+    "name": "Hoa hướng dương",
     "link": "/img/hoa/H_12.jpg",
     "colorNumber": "",
     "size": "",
@@ -150,12 +150,34 @@
   {
     "flg": 1,
     "id": 13,
-    "name": "Cánh đồng hoa Tuy Líp 05",
+    "name": "Cánh đồng hoa Tuy Líp",
     "link": "/img/hoa/H_13.jpg",
     "colorNumber": "",
     "size": "40x50",
     "price": "175,000",
     "quantity": "",
     "shoppeCode": "KM008"
+  },
+  {
+    "flg": 1,
+    "id": 14,
+    "name": "Hoa",
+    "link": "/img/hoa/H_14.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM105"
+  },
+  {
+    "flg": 1,
+    "id": 15,
+    "name": "Hoa hướng dương",
+    "link": "/img/hoa/H_15.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM106"
   }
 ]

@@ -54,7 +54,7 @@
   {
     "flg": 1,
     "id": 5,
-    "name": "Phong cảnh 01",
+    "name": "Phong cảnh",
     "link": "/img/phong-canh/PC_5.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -67,7 +67,7 @@
   {
     "flg": 1,
     "id": 6,
-    "name": "Phong cảnh 02",
+    "name": "Phong cảnh",
     "link": "/img/phong-canh/PC_6.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -80,7 +80,7 @@
   {
     "flg": 1,
     "id": 7,
-    "name": "Phong cảnh 03",
+    "name": "Phong cảnh",
     "link": "/img/phong-canh/PC_7.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -93,7 +93,7 @@
   {
     "flg": 1,
     "id": 8,
-    "name": "Phong cảnh Nhật Bản 01",
+    "name": "Phong cảnh Nhật Bản",
     "link": "/img/phong-canh/PC_8.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -106,7 +106,7 @@
   {
     "flg": 1,
     "id": 9,
-    "name": "Phong cảnh Sông núi 01",
+    "name": "Phong cảnh Sông núi",
     "link": "/img/phong-canh/PC_9.jpg",
     "colorNumber": "",
     "size": "30x40",
@@ -117,7 +117,7 @@
   {
     "flg": 1,
     "id": 10,
-    "name": "Phong cảnh 04",
+    "name": "Phong cảnh",
     "link": "/img/phong-canh/PC_10.jpg",
     "colorNumber": "",
     "size": "30x40",
@@ -139,7 +139,7 @@
   {
     "flg": 1,
     "id": 12,
-    "name": "Phong cảnh Sông núi 02",
+    "name": "Phong cảnh Sông núi",
     "link": "/img/phong-canh/PC_12.jpg",
     "colorNumber": "",
     "size": "30x40",
@@ -172,7 +172,7 @@
   {
     "flg": 1,
     "id": 15,
-    "name": "Phong cảnh Nhật Bản 02",
+    "name": "Phong cảnh Nhật Bản",
     "link": "/img/phong-canh/PC_15.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -212,5 +212,115 @@
     "price": "175,000",
     "quantity": "",
     "shoppeCode": "KM007"
+  },
+  {
+    "flg": 1,
+    "id": 19,
+    "name": "Phong cảnh",
+    "link": "/img/phong-canh/PC_19.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM088"
+  },
+  {
+    "flg": 1,
+    "id": 20,
+    "name": "Phong cảnh",
+    "link": "/img/phong-canh/PC_20.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM089"
+  },
+  {
+    "flg": 1,
+    "id": 21,
+    "name": "Thuyền và biển",
+    "link": "/img/phong-canh/PC_21.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "135,000",
+    "quantity": "",
+    "kamiCode": "KM090"
+  },
+  {
+    "flg": 1,
+    "id": 22,
+    "name": "Phong cảnh sân vườn",
+    "link": "/img/phong-canh/PC_22.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM091"
+  },
+  {
+    "flg": 1,
+    "id": 23,
+    "name": "Cảnh nhà cổ điển",
+    "link": "/img/phong-canh/PC_23.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM092"
+  },
+  {
+    "flg": 1,
+    "id": 24,
+    "name": "Tranh cuộc sống đầy màu sắc",
+    "link": "/img/phong-canh/PC_24.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM093"
+  },
+  {
+    "flg": 1,
+    "id": 25,
+    "name": "Phong cảnh Nhật Bản",
+    "link": "/img/phong-canh/PC_25.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM094"
+  },
+  {
+    "flg": 1,
+    "id": 26,
+    "name": "Phong cảnh Nhật Bản",
+    "link": "/img/phong-canh/PC_26.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM095"
+  },
+  {
+    "flg": 1,
+    "id": 27,
+    "name": "Tranh cuộc sống đầy màu sắc",
+    "link": "/img/phong-canh/PC_27.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM096"
+  },
+  {
+    "flg": 1,
+    "id": 28,
+    "name": "Phong cảnh",
+    "link": "/img/phong-canh/PC_28.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM104"
   }
 ]

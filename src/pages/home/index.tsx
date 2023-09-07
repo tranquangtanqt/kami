@@ -9,6 +9,7 @@ import nangTho from "resources/tranh/nang-tho.json";
 import phat from "resources/tranh/phat.json";
 import phongCanh from "resources/tranh/phong-canh.json";
 import tinhYeu from "resources/tranh/tinh-yeu.json";
+import bep from "resources/tranh/bep.json";
 import "./index.css";
 import categories from "resources/the-loai/the-loai.json";
 import { PictureView } from "components/home/picture-view";
@@ -132,7 +133,7 @@ export const Home = () => {
                       </div>
                     </div>
                     <div className="col-lg-4 col-md-4 col-sm-4">
-                      <div className="btn__all">
+                      <div className="btn__all font-custom">
                         <Link to={value.link} className="primary-btn">
                           Xem thêm <span className="arrow_right"></span>
                         </Link>
@@ -205,6 +206,12 @@ export const Home = () => {
                   {value.importJsonName === "cung-hoang-dao" && (
                     <PictureView
                       picture={cungHoangDao}
+                      isOutstanding={true}
+                    ></PictureView>
+                  )}
+                  {value.importJsonName === "bep" && (
+                    <PictureView
+                      picture={bep}
                       isOutstanding={true}
                     ></PictureView>
                   )}

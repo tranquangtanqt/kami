@@ -2,7 +2,7 @@
   {
     "flg": 1,
     "id": 1,
-    "name": "Tranh tròn hoa sen 01",
+    "name": "Tranh tròn hoa sen",
     "link": "/img/hoa-sen/HS_1.jpg",
     "colorNumber": "",
     "size": "",
@@ -15,7 +15,7 @@
   {
     "flg": 1,
     "id": 2,
-    "name": "Hoa sen trắng 01",
+    "name": "Hoa sen trắng",
     "link": "/img/hoa-sen/HS_2.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -28,7 +28,7 @@
   {
     "flg": 1,
     "id": 3,
-    "name": "Hoa sen 02",
+    "name": "Hoa sen",
     "link": "/img/hoa-sen/HS_3.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -37,5 +37,27 @@
     "outstanding": "x",
     "order": 3,
     "shoppeCode": "KM004"
+  },
+  {
+    "flg": 1,
+    "id": 4,
+    "name": "Hoa sen vàng",
+    "link": "/img/hoa-sen/HS_4.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "165,000",
+    "quantity": "",
+    "kamiCode": "KM101"
+  },
+  {
+    "flg": 1,
+    "id": 5,
+    "name": "Hoa sen vàng",
+    "link": "/img/hoa-sen/HS_5.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "165,000",
+    "quantity": "",
+    "kamiCode": "KM102"
   }
 ]

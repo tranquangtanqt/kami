@@ -75,9 +75,13 @@ export const PictureView: React.FC<Props> = ({ picture, isOutstanding }) => {
                     <span>Số màu: {data.colorNumber}</span>
                     {data.shoppeCode !== undefined &&
                     data.shoppeCode.trim() !== "" ? (
-                      <span className="pull-right">{data.shoppeCode}</span>
+                      <span className="pull-right font-weight-bold">
+                        {data.shoppeCode}
+                      </span>
                     ) : (
-                      <span className="pull-right">{data.kamiCode}</span>
+                      <span className="pull-right font-weight-bold">
+                        {data.kamiCode}
+                      </span>
                     )}
                     <br /> Kích thước: {data.size} <br /> Giá: {data.price}đ
                   </p>

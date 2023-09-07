@@ -37,8 +37,24 @@ export const Contact = () => {
         <div className="container">
           <div className="row d-flex justify-content-center">
             <div className="col-lg-8">
+              <div className="blog__details__content">
+                <div className="blog__details__item__text text-white">
+                  <h2 className="text-center">Tranh số hóa Kami</h2>
+                  <p>
+                    <strong>Địa chỉ:</strong>
+                    B2-8 KQH Xuân Phú, phường Xuân Phú, TP.Huế
+                  </p>
+                  <p>
+                    <strong>Giao hàng:</strong> Toàn quốc
+                  </p>
+                  <p>
+                    <strong>Điện thoại:</strong> 0328.272.178
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-8">
               <div className="blog__details__title">
-                <h2>Tranh số hóa Kami</h2>
                 <div className="blog__details__social">
                   <Link
                     target="blank"
@@ -56,13 +72,6 @@ export const Contact = () => {
                   >
                     <i className="fa fa-pinterest"></i>Shoppe
                   </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-8">
-              <div className="blog__details__content">
-                <div className="blog__details__item__text">
-                  <h4>Địa chỉ: B2-8 KQH Xuân Phú, phường Xuân Phú, TP.Huế</h4>
                 </div>
               </div>
             </div>

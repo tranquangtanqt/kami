@@ -2,7 +2,7 @@
   {
     "flg": 1,
     "id": 1,
-    "name": "Phượng hoàng 01",
+    "name": "Phượng hoàng",
     "link": "/img/dong-vat/DV_1.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -28,7 +28,7 @@
   {
     "flg": 1,
     "id": 3,
-    "name": "Phượng hoàng 02",
+    "name": "Phượng hoàng",
     "link": "/img/dong-vat/DV_3.jpg",
     "colorNumber": "",
     "size": "",
@@ -54,7 +54,7 @@
   {
     "flg": 1,
     "id": 5,
-    "name": "Cánh đồng hoa và chú cún 01",
+    "name": "Cánh đồng hoa và chú cún",
     "link": "/img/dong-vat/DV_5.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -67,7 +67,7 @@
   {
     "flg": 1,
     "id": 6,
-    "name": "Cánh đồng hoa và chú cún 02",
+    "name": "Cánh đồng hoa và chú cún",
     "link": "/img/dong-vat/DV_6.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -93,7 +93,7 @@
   {
     "flg": 1,
     "id": 8,
-    "name": "Cánh đồng hoa và chú cún 03",
+    "name": "Cánh đồng hoa và chú cún",
     "link": "/img/dong-vat/DV_8.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -146,5 +146,16 @@
     "price": "175,000",
     "quantity": "",
     "shoppeCode": "KM005"
+  },
+  {
+    "flg": 1,
+    "id": 13,
+    "name": "Rồng",
+    "link": "/img/dong-vat/DV_13.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM087"
   }
 ]

@@ -9,6 +9,7 @@ import nangTho from "resources/tranh/nang-tho.json";
 import phat from "resources/tranh/phat.json";
 import phongCanh from "resources/tranh/phong-canh.json";
 import tinhYeu from "resources/tranh/tinh-yeu.json";
+import bep from "resources/tranh/bep.json";
 import "./index.css";
 import categories from "resources/the-loai/the-loai.json";
 import { PictureDetailView } from "components/home/picture-view-detail";
@@ -123,6 +124,9 @@ export const Category = () => {
                 )}
                 {category?.importJsonName === "cung-hoang-dao" && (
                   <PictureDetailView picture={cungHoangDao}></PictureDetailView>
+                )}
+                {category?.importJsonName === "bep" && (
+                  <PictureDetailView picture={bep}></PictureDetailView>
                 )}
               </div>
             </div>
