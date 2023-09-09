@@ -179,5 +179,16 @@
     "price": "175,000",
     "quantity": "",
     "kamiCode": "KM106"
+  },
+  {
+    "flg": 1,
+    "id": 16,
+    "name": "Hoa Lavender",
+    "link": "/img/hoa/H_16.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM109"
   }
 ]

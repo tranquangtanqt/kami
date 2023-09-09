@@ -6,5 +6,5 @@ export const APP = {
 };
 
 export const PICTURE = {
-  TAKE: 8,
+  TAKE: 12,
 };

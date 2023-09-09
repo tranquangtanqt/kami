@@ -59,5 +59,16 @@
     "price": "165,000",
     "quantity": "",
     "kamiCode": "KM102"
+  },
+  {
+    "flg": 1,
+    "id": 6,
+    "name": "Hoa sen vàng",
+    "link": "/img/hoa-sen/HS_6.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM110"
   }
 ]

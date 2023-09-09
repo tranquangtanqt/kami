@@ -34,8 +34,8 @@ export const MasterLayout = (props: masterLayoutProps) => {
                         <Link to={""}>Trang chủ</Link>
                       </li>
                       <li>
-                        <Link to={"/the-loai/phat"}>
-                          Thể loại
+                        <Link to={"/tranh/phat"}>
+                          Tranh
                           <span className="arrow_carrot-down"></span>
                         </Link>
                         <ul className="dropdown">
@@ -47,6 +47,9 @@ export const MasterLayout = (props: masterLayoutProps) => {
                         </ul>
                       </li>
                       {/* <li>
+                        <Link to={"/tat-ca-tranh"}>Xem tất cả</Link>
+                      </li>
+                      <li>
                         <Link to={"/chuyen-doi/tranh"}>Chuyển đổi tranh</Link>
                       </li>
                       <li>

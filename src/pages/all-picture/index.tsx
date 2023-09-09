@@ -11,26 +11,25 @@ import phongCanh from "resources/tranh/phong-canh.json";
 import tinhYeu from "resources/tranh/tinh-yeu.json";
 import bep from "resources/tranh/bep.json";
 import "./index.css";
-import categories from "resources/the-loai/the-loai.json";
 import { PictureDetailView } from "components/home/picture-view-detail";
-import { Link, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import { ICategory } from "utils/interface/category.interface";
+// import { IPicture } from "utils/interface/picture.interface";
 
-export const Category = () => {
-  const params = useParams();
-  const [category, setCategory] = useState<ICategory>();
-
-  const initCategory = (theloai: string) => {
-    categories.forEach((value) => {
-      if (theloai === value.importJsonName) {
-        setCategory(value as ICategory);
-      }
-    });
-  };
-  useEffect(() => {
-    initCategory(params.theloai ?? "");
-  }, [params]);
+export const AllPicture = () => {
+  const [category] = useState<ICategory>();
+  // const [pictures, setPictures] = useState<IPicture[]>(() => {
+  //   let arr: IPicture[] = [];
+  //   chua.forEach((value) => {
+  //     let picture: IPicture = {};
+  //     picture.id = value.id;
+  //     arr.push(picture);
+  //     console.log(value);
+  //   });
+  //   console.log(arr);
+  //   return arr;
+  // });
 
   const init = () => {
     setTimeout(() => {
@@ -51,15 +50,24 @@ export const Category = () => {
       <div className="breadcrumb-option">
         <div className="container">
           <div className="row">
-            <div className="col-lg-12">
+            <div className="col-lg-8 col-lg-8 col-md-8 col-sm-8">
               <div className="breadcrumb__links">
                 <Link to={"/"}>
                   <i className="fa fa-home"></i> Trang chủ
                 </Link>
-                <Link to={"/"}>Tranh</Link>
-                <span>{category?.name}</span>
+                <span>Tất cả tranh</span>
               </div>
             </div>
+            {/* <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="product__page__filter">
+                <p>Sắp xếp:</p>
+                <select>
+                  <option value="">A-Z</option>
+                  <option value="">1-10</option>
+                  <option value="">10-50</option>
+                </select>
+              </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -70,12 +78,10 @@ export const Category = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="product__page__content">
-                <div className="product__page__title">
+                {/* <div className="product__page__title">
                   <div className="row">
                     <div className="col-lg-8 col-md-8 col-sm-8">
-                      <div className="section-title">
-                        <h4>{category?.name}</h4>
-                      </div>
+                      <div className="section-title"></div>
                     </div>
                     <div className="col-lg-4 col-md-4 col-sm-6">
                       <div className="product__page__filter">
@@ -88,7 +94,7 @@ export const Category = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {category?.importJsonName === "phat" && (
                   <PictureDetailView
                     picture={phat}

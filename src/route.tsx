@@ -10,6 +10,7 @@ import { MakeDataJsonFromExcelPicture } from "pages/convert/picture";
 import { Category } from "pages/category";
 import { Contact } from "pages/contact";
 import { IGallery } from "utils/interface/gallery.interface";
+import { AllPicture } from "pages/all-picture";
 
 export const RoutesRoot = () => {
   const lightGallery = useRef<any>(null);
@@ -51,8 +52,9 @@ export const RoutesRoot = () => {
         <MasterLayout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/the-loai/:theloai" element={<Category />} />
+            <Route path="/tranh/:theloai" element={<Category />} />
             <Route path="/lien-he" element={<Contact />} />
+            <Route path="/tat-ca-tranh" element={<AllPicture />} />
             <Route
               path="/chuyen-doi/tranh"
               element={<MakeDataJsonFromExcelPicture />}

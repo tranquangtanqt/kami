@@ -2,7 +2,7 @@
   {
     "flg": 1,
     "id": 1,
-    "name": "Nàng thơ 01",
+    "name": "Nàng thơ",
     "link": "/img/nang-tho/NT_1.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -15,7 +15,7 @@
   {
     "flg": 1,
     "id": 2,
-    "name": "Nàng thơ 02",
+    "name": "Nàng thơ",
     "link": "/img/nang-tho/NT_2.jpg",
     "colorNumber": "",
     "size": "",
@@ -28,7 +28,7 @@
   {
     "flg": 1,
     "id": 3,
-    "name": "Nàng thơ 03",
+    "name": "Nàng thơ",
     "link": "/img/nang-tho/NT_3.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -54,7 +54,7 @@
   {
     "flg": 1,
     "id": 5,
-    "name": "Nàng thơ 04",
+    "name": "Nàng thơ",
     "link": "/img/nang-tho/NT_5.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -67,7 +67,7 @@
   {
     "flg": 1,
     "id": 6,
-    "name": "Nàng thơ 05",
+    "name": "Nàng thơ",
     "link": "/img/nang-tho/NT_6.jpg",
     "colorNumber": "",
     "size": "40x50",
@@ -89,5 +89,29 @@
     "outstanding": "x",
     "order": 7,
     "shoppeCode": "KM001"
+  },
+  {
+    "flg": 1,
+    "id": 8,
+    "name": "Nàng thơ",
+    "link": "/img/nang-tho/NT_8.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "outstanding": "x",
+    "order": 8,
+    "kamiCode": "KM111"
+  },
+  {
+    "flg": 1,
+    "id": 9,
+    "name": "Nàng thơ",
+    "link": "/img/nang-tho/NT_9.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM113"
   }
 ]

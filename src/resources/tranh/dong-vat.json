@@ -157,5 +157,27 @@
     "price": "175,000",
     "quantity": "",
     "kamiCode": "KM087"
+  },
+  {
+    "flg": 1,
+    "id": 14,
+    "name": "Mèo đại vương",
+    "link": "/img/dong-vat/DV_14.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM107"
+  },
+  {
+    "flg": 1,
+    "id": 15,
+    "name": "Mèo đại vương",
+    "link": "/img/dong-vat/DV_15.jpg",
+    "colorNumber": "",
+    "size": "40x50",
+    "price": "175,000",
+    "quantity": "",
+    "kamiCode": "KM108"
   }
 ]
