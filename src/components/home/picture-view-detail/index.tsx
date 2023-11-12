@@ -1,46 +1,41 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { APP, PICTURE } from "utils/constants/app.constants";
 import { IPicture } from "utils/interface/picture.interface";
 
 type Props = {
-  picture: IPicture[];
-  category?: string;
+  pictures: IPicture[];
 };
 
-export const PictureDetailView: React.FC<Props> = ({ picture, category }) => {
-  const [pictureList, setPictureList] = useState<IPicture[]>(() => {
-    // if (isOutstanding !== undefined && isOutstanding) {
-    //   picture = picture.filter((x) => {
-    //     return (
-    //       x.outstanding !== undefined && x.outstanding?.trim().length !== 0
-    //     );
-    //   });
-    //   picture = picture.sort((a, b) => {
-    //     if (a.order === undefined || b.order === undefined) {
-    //       return 99999;
-    //     }
+export const PictureDetailView: React.FC<Props> = ({ pictures }) => {
+  const [pictureList, setPictureList] = useState<IPicture[]>();
+  const [pageCurrent, setPageCurrent] = useState(1);
+  const [pageTotal, setPageTotal] = useState<number[]>([]);
 
-    //     return a.order - b.order;
-    //   });
-    //   return picture;
-    // }
-
-    picture = picture.sort((a, b) => {
+  const initPicures = (picture: IPicture[]) => {
+    let pictureTemp: IPicture[] = [...picture];
+    pictureTemp = pictureTemp?.sort((a, b) => {
       if (a.order === undefined || b.order === undefined) {
         return 99999;
       }
-
       return a.order - b.order;
     });
-    return picture.slice(0, PICTURE.TAKE);
-  });
+    pictureTemp = pictureTemp?.slice(0, PICTURE.TAKE);
+    setPictureList(pictureTemp);
+    let total = 0;
+    if (picture?.length !== undefined) {
+      total = Math.ceil(picture?.length / PICTURE.TAKE);
+    }
+    setPageTotal(
+      Array(total)
+        .fill(null)
+        .map((_, i) => i + 1)
+    );
+  };
 
-  const [pageCurrent, setPageCurrent] = useState(1);
-  const [pageTotal] = useState<number[]>(() => {
-    const total = Math.ceil(picture.length / PICTURE.TAKE);
-    return new Array(total).fill(null).map((_, i) => i + 1);
-  });
+  useEffect(() => {
+    initPicures(pictures);
+  }, [pictures]);
 
   const openGallery = (link: string) => {
     const btnOpenGalleryInRouter = $("#open-gallery");
@@ -48,22 +43,29 @@ export const PictureDetailView: React.FC<Props> = ({ picture, category }) => {
     btnOpenGalleryInRouter.click();
   };
 
-  const gotoPage = (page: number) => {
-    let pic: IPicture[] = [...picture];
-    pic = pic.sort((a, b) => {
-      if (a.order === undefined || b.order === undefined) {
-        return 99999;
+  const gotoPage = (page?: number) => {
+    if (pictures !== undefined) {
+      let pictureTemp: IPicture[] = [...pictures];
+
+      pictureTemp = pictureTemp?.sort((a, b) => {
+        if (a.order === undefined || b.order === undefined) {
+          return 99999;
+        }
+
+        return a.order - b.order;
+      });
+
+      if (page !== undefined) {
+        pictureTemp = pictureTemp.slice(
+          (page - 1) * PICTURE.TAKE,
+          (page - 1) * PICTURE.TAKE + PICTURE.TAKE
+        );
+        setPageCurrent(page);
+        setPictureList(pictureTemp);
+      } else {
+        setPageCurrent(1);
       }
-
-      return a.order - b.order;
-    });
-
-    pic = pic.slice(
-      (page - 1) * PICTURE.TAKE,
-      (page - 1) * PICTURE.TAKE + PICTURE.TAKE
-    );
-    setPictureList(pic);
-    setPageCurrent(page);
+    }
 
     $("html, body").animate({ scrollTop: 0 });
   };
@@ -72,7 +74,7 @@ export const PictureDetailView: React.FC<Props> = ({ picture, category }) => {
     <>
       <Fragment>
         <div className="row">
-          {pictureList.map((data, key) => (
+          {pictureList?.map((data, key) => (
             <div className="col-lg-3 col-md-6 col-sm-6" key={key}>
               <div className="product__item">
                 <div
@@ -126,7 +128,7 @@ export const PictureDetailView: React.FC<Props> = ({ picture, category }) => {
                 ></i>
               </Link>
             )}
-            {pageTotal.map((item, key) => (
+            {pageTotal?.map((item, key) => (
               <Link
                 to={""}
                 className={pageCurrent === item ? "current-page" : ""}
@@ -137,11 +139,11 @@ export const PictureDetailView: React.FC<Props> = ({ picture, category }) => {
               </Link>
             ))}
 
-            {pageCurrent !== pageTotal.length && (
+            {pageCurrent !== pageTotal?.length && (
               <Link to={""}>
                 <i
                   className="fa fa-angle-double-right"
-                  onClick={() => gotoPage(pageTotal.length)}
+                  onClick={() => gotoPage(pageTotal?.length)}
                 ></i>
               </Link>
             )}
@@ -151,3 +153,30 @@ export const PictureDetailView: React.FC<Props> = ({ picture, category }) => {
     </>
   );
 };
+
+// const [pictureList, setPictureList] = useState<IPicture[] | undefined>(() => {
+//   // if (isOutstanding !== undefined && isOutstanding) {
+//   //   picture = picture.filter((x) => {
+//   //     return (
+//   //       x.outstanding !== undefined && x.outstanding?.trim().length !== 0
+//   //     );
+//   //   });
+//   //   picture = picture.sort((a, b) => {
+//   //     if (a.order === undefined || b.order === undefined) {
+//   //       return 99999;
+//   //     }
+
+//   //     return a.order - b.order;
+//   //   });
+//   //   return picture;
+//   // }
+//   console.log(picture);
+//   picture = picture?.sort((a, b) => {
+//     if (a.order === undefined || b.order === undefined) {
+//       return 99999;
+//     }
+
+//     return a.order - b.order;
+//   });
+//   return picture?.slice(0, PICTURE.TAKE);
+// });

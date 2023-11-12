@@ -1,0 +1,22 @@
+﻿https://github.com/gglukmann/use-google-sheets/tree/master
+
+Tạo google API key https://www.vmix.com/help26/GoogleAPIKey.html
+
+https://drive.google.com/uc?id=15G7oII2TgM7LbmNStFUW8mt2Bftp9KuM
+
+1. Go to your Google Drive.
+2. Right-click on the image file.
+3. Select Share.
+4. Open the General access drop-down menu.
+5. Select Anyone with the link to publish your image.
+6. Click Copy link and then Done.
+You will get a URL like the following:
+https://drive.google.com/file/d/1wMgCWAsqlw0nXcMhCldTbwSznMdXUmBT/view?usp=sharing
+You can see your file ID in bold. Put the file ID in the following simple view link:
+https://drive.google.com/uc?id=FILE ID
+Result:
+https://drive.google.com/uc?id=1wMgCWAsqlw0nXcMhCldTbwSznMdXUmBT
+
+https://github.com/daovietanh190499/Shopsmon?fbclid=IwAR2JLNUR-wji51WjbSWy5LPkPU1Kn5hqDzt8sLclyTdrl1ADVCs_Pry-VOc
+
+https://github.com/daovietanh190499?tab=overview&from=2023-10-01&to=2023-10-31

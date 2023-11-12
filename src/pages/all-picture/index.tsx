@@ -1,43 +1,97 @@
-import chua from "resources/tranh/chua.json";
-import cungHoangDao from "resources/tranh/cung-hoang-dao.json";
-import dongVat from "resources/tranh/dong-vat.json";
-import hoa from "resources/tranh/hoa.json";
-import hoaSen from "resources/tranh/hoa-sen.json";
-import hoatHinh from "resources/tranh/hoat-hinh.json";
-import meVaBe from "resources/tranh/me-va-be.json";
-import nangTho from "resources/tranh/nang-tho.json";
-import phat from "resources/tranh/phat.json";
-import phongCanh from "resources/tranh/phong-canh.json";
-import tinhYeu from "resources/tranh/tinh-yeu.json";
-import bep from "resources/tranh/bep.json";
 import "./index.css";
 import { PictureDetailView } from "components/home/picture-view-detail";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ICategory } from "utils/interface/category.interface";
-// import { IPicture } from "utils/interface/picture.interface";
+import { IPicture } from "utils/interface/picture.interface";
+import useGoogleSheets from "use-google-sheets";
 
 export const AllPicture = () => {
-  const [category] = useState<ICategory>();
-  // const [pictures, setPictures] = useState<IPicture[]>(() => {
-  //   let arr: IPicture[] = [];
-  //   chua.forEach((value) => {
-  //     let picture: IPicture = {};
-  //     picture.id = value.id;
-  //     arr.push(picture);
-  //     console.log(value);
-  //   });
-  //   console.log(arr);
-  //   return arr;
-  // });
+  const [categories, setCategories] = useState<ICategory[]>();
 
   const init = () => {
     setTimeout(() => {
       $(".loader").fadeOut();
-      $("#preloder").delay(200).fadeOut("slow");
-    }, 100);
+      $("#preloder").delay(100).fadeOut("slow");
+    }, 1000);
   };
-  init();
+
+  const REACT_APP_GOOGLE_API_KEY = "AIzaSyDzMVLOCEoQjQes2bF0H9pc9HbzlKzOldQ";
+  const REACT_APP_GOOGLE_SHEETS_ID =
+    "14qL7AgxZQDm8GAqj0dUQ49m03O_JHS6ENd862WLr9Gc";
+
+  const { data, loading, error } = useGoogleSheets({
+    apiKey: REACT_APP_GOOGLE_API_KEY,
+    sheetId: REACT_APP_GOOGLE_SHEETS_ID,
+  });
+
+  if (loading) {
+    console.log("loading....");
+  } else {
+    init();
+  }
+  if (error) {
+    console.log("Error!");
+  }
+
+  useEffect(() => {
+    initPicture(data);
+  }, [data]);
+
+  const initPicture = (data: any) => {
+    // let categoryList: ICategory[] = [];
+    // for (let i = 0; i < data.length; i++) {
+    //   // Thông tin chung
+    //   if (i === 0) {
+    //     continue;
+    //   }
+    //   // Thể loại
+    //   else if (i === 1) {
+    //     const sheetData = data[i].data;
+    //     for (let j = 1; j < sheetData.length; j++) {
+    //       const element = sheetData[j];
+    //       let category: ICategory = {};
+    //       category.id = element.id;
+    //       category.name = element.name;
+    //       if (element.sheet_name === undefined) {
+    //         category.sheetName = "";
+    //       } else {
+    //         category.sheetName = element.sheet_name;
+    //       }
+    //       categoryList.push(category);
+    //     }
+    //   } else {
+    //     // data
+    //     let pictureData: IPicture[] = [];
+    //     const sheetData = data[i].data;
+    //     for (let j = 1; j < sheetData.length; j++) {
+    //       const element = sheetData[j];
+    //       let pic: IPicture = {};
+    //       pic.id = Number(element.id);
+    //       pic.name = element.name;
+    //       pic.link = element.link;
+    //       pic.colorNumber = element.color_number;
+    //       pic.size = element.size;
+    //       pic.price = element.price;
+    //       pic.quantity = element.quantity;
+    //       pic.outstanding = element.outstanding;
+    //       if (element.order !== undefined && element.order !== "") {
+    //         pic.order = Number(element.order);
+    //       }
+    //       pic.shoppeCode = element.shoppe_code;
+    //       pic.kamiCode = element.kami_code;
+    //       pictureData.push(pic);
+    //     }
+    //     let cateTemp = categoryList.filter((x) => x.sheetName === data[i].id);
+    //     let category: ICategory;
+    //     if (cateTemp !== undefined && cateTemp.length > 0) {
+    //       category = cateTemp[0];
+    //       category.pictures = pictureData;
+    //     }
+    //   }
+    // }
+    // setCategories(categoryList);
+  };
 
   return (
     <>
@@ -58,16 +112,6 @@ export const AllPicture = () => {
                 <span>Tất cả tranh</span>
               </div>
             </div>
-            {/* <div className="col-lg-4 col-md-4 col-sm-6">
-              <div className="product__page__filter">
-                <p>Sắp xếp:</p>
-                <select>
-                  <option value="">A-Z</option>
-                  <option value="">1-10</option>
-                  <option value="">10-50</option>
-                </select>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
@@ -78,24 +122,12 @@ export const AllPicture = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="product__page__content">
-                {/* <div className="product__page__title">
-                  <div className="row">
-                    <div className="col-lg-8 col-md-8 col-sm-8">
-                      <div className="section-title"></div>
-                    </div>
-                    <div className="col-lg-4 col-md-4 col-sm-6">
-                      <div className="product__page__filter">
-                        <p>Sắp xếp:</p>
-                        <select>
-                          <option value="">A-Z</option>
-                          <option value="">1-10</option>
-                          <option value="">10-50</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
-                {category?.importJsonName === "phat" && (
+                {categories?.map((value, key) => (
+                  <PictureDetailView
+                    pictures={value.pictures}
+                  ></PictureDetailView>
+                ))}
+                {/* {category?.importJsonName === "phat" && (
                   <PictureDetailView
                     picture={phat}
                     category={"phat"}
@@ -133,7 +165,7 @@ export const AllPicture = () => {
                 )}
                 {category?.importJsonName === "bep" && (
                   <PictureDetailView picture={bep}></PictureDetailView>
-                )}
+                )} */}
               </div>
             </div>
           </div>
