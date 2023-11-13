@@ -4,19 +4,19 @@ import { APP, PICTURE } from "utils/constants/app.constants";
 import { IPicture } from "utils/interface/picture.interface";
 
 type Props = {
-  picture: IPicture[];
+  pictures?: IPicture[];
   isOutstanding?: boolean;
 };
 
-export const PictureView: React.FC<Props> = ({ picture, isOutstanding }) => {
-  const [pictureList] = useState<IPicture[]>(() => {
+export const PictureView: React.FC<Props> = ({ pictures, isOutstanding }) => {
+  const [pictureList] = useState<IPicture[] | undefined>(() => {
     if (isOutstanding !== undefined && isOutstanding) {
-      picture = picture.filter((x) => {
+      pictures = pictures?.filter((x) => {
         return (
           x.outstanding !== undefined && x.outstanding?.trim().length !== 0
         );
       });
-      picture = picture.sort((a, b) => {
+      pictures = pictures?.sort((a, b) => {
         if (a.order === undefined || b.order === undefined) {
           return 99999;
         }
@@ -24,7 +24,7 @@ export const PictureView: React.FC<Props> = ({ picture, isOutstanding }) => {
         return a.order - b.order;
       });
     } else {
-      picture = picture.sort((a, b) => {
+      pictures = pictures?.sort((a, b) => {
         if (a.order === undefined || b.order === undefined) {
           return 99999;
         }
@@ -33,7 +33,7 @@ export const PictureView: React.FC<Props> = ({ picture, isOutstanding }) => {
       });
     }
 
-    return picture.slice(0, PICTURE.TAKE);
+    return pictures?.slice(0, PICTURE.TAKE);
   });
 
   const openGallery = (link: string) => {
@@ -46,7 +46,7 @@ export const PictureView: React.FC<Props> = ({ picture, isOutstanding }) => {
     <>
       <Fragment>
         <div className="row">
-          {pictureList.map((data, key) => (
+          {pictureList?.map((data, key) => (
             <div className="col-lg-3 col-md-6 col-sm-6" key={key}>
               <div className="product__item">
                 <div

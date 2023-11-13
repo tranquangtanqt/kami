@@ -7,10 +7,11 @@ import { Home } from "pages/home";
 import { MasterLayout } from "pages/_layout/master-layout";
 import { MakeDataJsonFromExcelCategory } from "pages/convert/category";
 import { MakeDataJsonFromExcelPicture } from "pages/convert/picture";
-import { Category } from "pages/category";
+import { PicturePage } from "pages/picture";
 import { Contact } from "pages/contact";
 import { IGallery } from "utils/interface/gallery.interface";
 import { AllPicture } from "pages/all-picture";
+import { ReadDataExcelGoole } from "pages/demo/google-sheet";
 
 export const RoutesRoot = () => {
   const lightGallery = useRef<any>(null);
@@ -30,7 +31,6 @@ export const RoutesRoot = () => {
 
   // Add new slides
   const addItems = useCallback(() => {
-    console.log($("#open-gallery").val());
     const updatedItems = [
       {
         id: "1",
@@ -52,7 +52,7 @@ export const RoutesRoot = () => {
         <MasterLayout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/tranh/:theloai" element={<Category />} />
+            <Route path="/tranh/:category" element={<PicturePage />} />
             <Route path="/lien-he" element={<Contact />} />
             <Route path="/tat-ca-tranh" element={<AllPicture />} />
             <Route
@@ -63,6 +63,7 @@ export const RoutesRoot = () => {
               path="/chuyen-doi/the-loai"
               element={<MakeDataJsonFromExcelCategory />}
             />
+            <Route path="/demo/google-sheet" element={<ReadDataExcelGoole />} />
           </Routes>
         </MasterLayout>
       </HashRouter>
