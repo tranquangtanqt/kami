@@ -36,8 +36,14 @@ export const PicturePage = () => {
     console.log("Error!");
   }
 
+  const showLoading = () => {
+    $(".loader").fadeIn();
+    $("#preloder").fadeIn("slow");
+  };
+
   useEffect(() => {
     initPicture(params.category ?? "", data);
+    showLoading();
   }, [params.category, data]);
 
   const initPicture = (sheet_name: string, data: any) => {

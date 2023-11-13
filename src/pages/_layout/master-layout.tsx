@@ -60,9 +60,9 @@ export const MasterLayout = (props: masterLayoutProps) => {
                       <li>
                         <Link to={"/lien-he"}>Liên hệ</Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link to={"/demo/google-sheet"}>Demo</Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </nav>

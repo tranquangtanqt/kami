@@ -43,6 +43,11 @@ export const PictureDetailView: React.FC<Props> = ({ pictures }) => {
     btnOpenGalleryInRouter.click();
   };
 
+  const showLoading = () => {
+    $(".loader").fadeIn();
+    $("#preloder").fadeIn("slow");
+  };
+
   const gotoPage = (page?: number) => {
     if (pictures !== undefined) {
       let pictureTemp: IPicture[] = [...pictures];
@@ -66,8 +71,8 @@ export const PictureDetailView: React.FC<Props> = ({ pictures }) => {
         setPageCurrent(1);
       }
     }
-
-    $("html, body").animate({ scrollTop: 0 });
+    showLoading();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
   };
 
   return (
