@@ -97,12 +97,10 @@ export const Home = () => {
           category = cateTemp[0];
           category.pictures = pictureData;
         }
-        console.log(pictureData);
       }
     }
 
     setCategories(categoryList);
-    console.log(categoryList);
   };
 
   return (

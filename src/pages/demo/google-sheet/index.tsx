@@ -21,8 +21,6 @@ export const ReadDataExcelGoole = () => {
     console.log("Error!");
   }
 
-  console.log(data);
-
   const createContent = () => {};
 
   const onChange = (event: any) => {};

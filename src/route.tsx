@@ -31,7 +31,6 @@ export const RoutesRoot = () => {
 
   // Add new slides
   const addItems = useCallback(() => {
-    console.log($("#open-gallery").val());
     const updatedItems = [
       {
         id: "1",

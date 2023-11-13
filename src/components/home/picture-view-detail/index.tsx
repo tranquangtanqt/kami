@@ -175,7 +175,6 @@ export const PictureDetailView: React.FC<Props> = ({ pictures }) => {
 //   //   });
 //   //   return picture;
 //   // }
-//   console.log(picture);
 //   picture = picture?.sort((a, b) => {
 //     if (a.order === undefined || b.order === undefined) {
 //       return 99999;
