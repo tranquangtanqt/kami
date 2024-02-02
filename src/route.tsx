@@ -12,6 +12,7 @@ import { Contact } from "pages/contact";
 import { IGallery } from "utils/interface/gallery.interface";
 import { AllPicture } from "pages/all-picture";
 import { ReadDataExcelGoole } from "pages/demo/google-sheet";
+import { WriteDataExcelGoole } from "pages/demo/write-google-sheet";
 
 export const RoutesRoot = () => {
   const lightGallery = useRef<any>(null);
@@ -44,7 +45,7 @@ export const RoutesRoot = () => {
     ];
     setItems(updatedItems);
     setTimeout(openGallery, 100);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [items]);
 
   return (
@@ -56,15 +57,10 @@ export const RoutesRoot = () => {
             <Route path="/tranh/:category" element={<PicturePage />} />
             <Route path="/lien-he" element={<Contact />} />
             <Route path="/tat-ca-tranh" element={<AllPicture />} />
-            <Route
-              path="/chuyen-doi/tranh"
-              element={<MakeDataJsonFromExcelPicture />}
-            />
-            <Route
-              path="/chuyen-doi/the-loai"
-              element={<MakeDataJsonFromExcelCategory />}
-            />
-            <Route path="/demo/google-sheet" element={<ReadDataExcelGoole />} />
+            <Route path="/chuyen-doi/tranh" element={<MakeDataJsonFromExcelPicture />} />
+            <Route path="/chuyen-doi/the-loai" element={<MakeDataJsonFromExcelCategory />} />
+            <Route path="/demo/read-google-sheet" element={<ReadDataExcelGoole />} />
+            <Route path="/demo/write-google-sheet" element={<WriteDataExcelGoole />} />
           </Routes>
         </MasterLayout>
       </HashRouter>
@@ -72,12 +68,7 @@ export const RoutesRoot = () => {
         <button onClick={openGallery} className="d-none">
           Open Gallery
         </button>
-        <button
-          onClick={addItems}
-          defaultValue={""}
-          id="open-gallery"
-          className="d-none"
-        >
+        <button onClick={addItems} defaultValue={""} id="open-gallery" className="d-none">
           Add new slide and open gallery
         </button>
         <LightGallery

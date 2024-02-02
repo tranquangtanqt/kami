@@ -13,10 +13,23 @@ https://drive.google.com/uc?id=15G7oII2TgM7LbmNStFUW8mt2Bftp9KuM
 You will get a URL like the following:
 https://drive.google.com/file/d/1wMgCWAsqlw0nXcMhCldTbwSznMdXUmBT/view?usp=sharing
 You can see your file ID in bold. Put the file ID in the following simple view link:
-https://drive.google.com/uc?id=FILE ID
+
+https://drive.google.com/thumbnail?id=FILE ID5&sz=w1000
 Result:
-https://drive.google.com/uc?id=1wMgCWAsqlw0nXcMhCldTbwSznMdXUmBT
+https://drive.google.com/thumbnail?id=1wMgCWAsqlw0nXcMhCldTbwSznMdXUmBT&sz=w1000
+
+--https://drive.google.com/uc?id=FILE ID
+--Result:
+--https://drive.google.com/uc?id=1wMgCWAsqlw0nXcMhCldTbwSznMdXUmBT
 
 https://github.com/daovietanh190499/Shopsmon?fbclid=IwAR2JLNUR-wji51WjbSWy5LPkPU1Kn5hqDzt8sLclyTdrl1ADVCs_Pry-VOc
 
 https://github.com/daovietanh190499?tab=overview&from=2023-10-01&to=2023-10-31
+
+
+
+Tham khảo: https://dev.to/tuasegun/submitting-custom-form-data-to-google-sheets-via-react-js-19al
+    Video: https://www.youtube.com/watch?v=ZA6j2PhXSUg
+
+ID triển khai: AKfycbxw3mbDq0DHFdZByq9QWUBJg0cw4S5k3iIF-MuXQmqEeRjnhIjDoqXf00NYMeaDLWgI
+URL: https://script.google.com/macros/s/AKfycbxw3mbDq0DHFdZByq9QWUBJg0cw4S5k3iIF-MuXQmqEeRjnhIjDoqXf00NYMeaDLWgI/exec
