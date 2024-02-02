@@ -3,11 +3,11 @@ import { PictureDetailView } from "components/home/picture-view-detail";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ICategory } from "utils/interface/category.interface";
-import { IPicture } from "utils/interface/picture.interface";
+// import { IPicture } from "utils/interface/picture.interface";
 import useGoogleSheets from "use-google-sheets";
 
 export const AllPicture = () => {
-  const [categories, setCategories] = useState<ICategory[]>();
+  const [categories] = useState<ICategory[]>();
 
   const init = () => {
     setTimeout(() => {

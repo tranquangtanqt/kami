@@ -49,30 +49,29 @@ export const PictureDetailView: React.FC<Props> = ({ pictures }) => {
   };
 
   const gotoPage = (page?: number) => {
-    if (pictures !== undefined) {
-      let pictureTemp: IPicture[] = [...pictures];
-
-      pictureTemp = pictureTemp?.sort((a, b) => {
-        if (a.order === undefined || b.order === undefined) {
-          return 99999;
-        }
-
-        return a.order - b.order;
-      });
-
-      if (page !== undefined) {
-        pictureTemp = pictureTemp.slice(
-          (page - 1) * PICTURE.TAKE,
-          (page - 1) * PICTURE.TAKE + PICTURE.TAKE
-        );
-        setPageCurrent(page);
-        setPictureList(pictureTemp);
-      } else {
-        setPageCurrent(1);
-      }
-    }
     showLoading();
-    $("html, body").animate({ scrollTop: 0 }, "slow");
+    setTimeout(() => {
+      if (pictures !== undefined) {
+        let pictureTemp: IPicture[] = [...pictures];
+
+        pictureTemp = pictureTemp?.sort((a, b) => {
+          if (a.order === undefined || b.order === undefined) {
+            return 99999;
+          }
+
+          return a.order - b.order;
+        });
+
+        if (page !== undefined) {
+          pictureTemp = pictureTemp.slice((page - 1) * PICTURE.TAKE, (page - 1) * PICTURE.TAKE + PICTURE.TAKE);
+          setPageCurrent(page);
+          setPictureList(pictureTemp);
+        } else {
+          setPageCurrent(1);
+        }
+      }
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+    }, 700);
   };
 
   return (
@@ -106,15 +105,10 @@ export const PictureDetailView: React.FC<Props> = ({ pictures }) => {
                 <div className="anime__details__text">
                   <p>
                     <span>Số màu: {data.colorNumber}</span>
-                    {data.shoppeCode !== undefined &&
-                    data.shoppeCode.trim() !== "" ? (
-                      <span className="pull-right font-weight-bold">
-                        {data.shoppeCode}
-                      </span>
+                    {data.shoppeCode !== undefined && data.shoppeCode.trim() !== "" ? (
+                      <span className="pull-right font-weight-bold">{data.shoppeCode}</span>
                     ) : (
-                      <span className="pull-right font-weight-bold">
-                        {data.kamiCode}
-                      </span>
+                      <span className="pull-right font-weight-bold">{data.kamiCode}</span>
                     )}
                     <br /> Kích thước: {data.size} <br /> Giá: {data.price}đ
                   </p>
@@ -127,10 +121,7 @@ export const PictureDetailView: React.FC<Props> = ({ pictures }) => {
           <div className="product__pagination">
             {pageCurrent !== 1 && (
               <Link to={""}>
-                <i
-                  className="fa fa-angle-double-left"
-                  onClick={() => gotoPage(1)}
-                ></i>
+                <i className="fa fa-angle-double-left" onClick={() => gotoPage(1)}></i>
               </Link>
             )}
             {pageTotal?.map((item, key) => (
@@ -146,10 +137,7 @@ export const PictureDetailView: React.FC<Props> = ({ pictures }) => {
 
             {pageCurrent !== pageTotal?.length && (
               <Link to={""}>
-                <i
-                  className="fa fa-angle-double-right"
-                  onClick={() => gotoPage(pageTotal?.length)}
-                ></i>
+                <i className="fa fa-angle-double-right" onClick={() => gotoPage(pageTotal?.length)}></i>
               </Link>
             )}
           </div>

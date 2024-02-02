@@ -44,6 +44,7 @@ export const RoutesRoot = () => {
     ];
     setItems(updatedItems);
     setTimeout(openGallery, 100);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [items]);
 
   return (

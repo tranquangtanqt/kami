@@ -15,6 +15,8 @@ export const ReadDataExcelGoole = () => {
 
   if (loading) {
     console.log("loading....");
+  } else {
+    console.log(data);
   }
 
   if (error) {

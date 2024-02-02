@@ -42,8 +42,11 @@ export const PicturePage = () => {
   };
 
   useEffect(() => {
-    initPicture(params.category ?? "", data);
     showLoading();
+    setTimeout(() => {
+      initPicture(params.category ?? "", data);
+    }, 700);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params.category, data]);
 
   const initPicture = (sheet_name: string, data: any) => {
